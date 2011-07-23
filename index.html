@@ -1,0 +1,14 @@
+<!doctype html>
+<html style="height:100%;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAAGElEQVQY02P4jwrOoAKGgZRG46OpHkhpAOE6DQIdhwr4AAAAAElFTkSuQmCC)">
+  <head>
+    <title>background-color.info</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAHUlEQVQoz2P8//8/A8N74hHLewbSwKiGUQ1DRwMAU4ofPXxbxqIAAAAASUVORK5CYII=" />
+  </head>
+  <body style="margin:0;height:100%">
+    <script>
+      (window.onhashchange = function (color) {
+        document.title = (color = /\/([^/]*)$/.exec(window.location.href)[1]) ? (document.body.style.background = color) : 'background-color.info'
+      })()
+    </script>
+  </body>
+</html>
