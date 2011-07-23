@@ -6,8 +6,11 @@
   </head>
   <body style="margin:0;height:100%">
     <script>
-      (window.onhashchange = function (color) {
-        document.title = (color = /\/([^/]*)$/.exec(window.location.href)[1]) ? (document.body.style.background = color) : 'background-color.info'
+      (window.onhashchange = function () {
+        var color, href, host
+        href = window.location.href
+        host = window.location.host
+        document.title = (color = href.substr(href.indexOf(host) + host.length + 1)) ? (document.body.style.background = color) : 'background-color.info'
       })()
     </script>
   </body>
