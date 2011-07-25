@@ -10,7 +10,7 @@
         var color, href, host
         href = window.location.href
         host = window.location.host
-        document.title = (color = href.substr(href.indexOf(host) + host.length + 1)) ? (document.body.style.background = color) : 'background-color.info'
+        document.title = (color = decodeURIComponent(href.substr(href.indexOf(host) + host.length + 1))) ? (document.body.style.background = color) : 'background-color.info'
       })()
     </script>
   </body>
